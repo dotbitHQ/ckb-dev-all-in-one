@@ -2,8 +2,7 @@ name: Docker Image CD
 
 on:
   release: 
-    type:
-      - published
+    types: [published]
 
 jobs:
   build:
