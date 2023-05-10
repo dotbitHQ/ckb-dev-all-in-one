@@ -1,6 +1,9 @@
 name: Docker Image CD
 
-on: release
+on:
+  release: 
+    type:
+      - published
 
 jobs:
   build:
