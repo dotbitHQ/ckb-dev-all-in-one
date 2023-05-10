@@ -1,5 +1,5 @@
-MAINTAINER Louis Yu <yuluyi1991@gmail.com>
 FROM docker.io/buildpack-deps:focal as base
+MAINTAINER Louis Yu <yuluyi1991@gmail.com>
 RUN apt-get update && apt-get install -y git autoconf automake autotools-dev curl libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev
 RUN git clone --depth=1 --recurse-submodules --shallow-submodules https://github.com/nervosnetwork/ckb-riscv-gnu-toolchain.git --branch update-20191012 /source
 
